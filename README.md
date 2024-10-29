@@ -18,7 +18,7 @@ Europeana is an internet portal that acts as an interface to books, paintings, f
 Via Composer
 
 ``` bash
-$ composer require colada/europeana
+composer require colada/europeana
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ You will need an API key before you can connect to the API endpoint. You can reg
 
 Perform a basic search query:
 
-```
+```php
 $apiKey = "myRegisteredKey";
 $payload = new Colada\Europeana\Payload\SearchPayload();
 $payload->addQuery("Mona Lisa");
@@ -79,7 +79,7 @@ refer to the [Europeana API Google Group](https://groups.google.com/forum/#!foru
 ## Testing
 
 ``` bash
-$ phpunit
+phpunit
 ```
 
 ## Contributing
